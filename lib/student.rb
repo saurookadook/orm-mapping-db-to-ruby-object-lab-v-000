@@ -59,10 +59,10 @@ class Student
       SELECT name
       FROM students
       WHERE grade = 10
-      LIMIT 2
+      LIMIT ?
     SQL
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, value)
   end
 
   def self.first_student_in_grade_10
