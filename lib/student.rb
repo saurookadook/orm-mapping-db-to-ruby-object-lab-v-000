@@ -38,6 +38,7 @@ class Student
       SELECT COUNT(name)
       FROM students
       WHERE grade = 9
+      GROUP BY grade
     SQL
 
     DB[:conn].execute(sql)
