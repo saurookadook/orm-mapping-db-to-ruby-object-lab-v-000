@@ -54,7 +54,7 @@ class Student
     DB[:conn].execute(sql)
   end
 
-  def self.first_X_students_in_grade_10(amount)
+  def self.first_X_students_in_grade_10(value)
   end
 
   def self.first_student_in_grade_10
