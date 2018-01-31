@@ -78,7 +78,7 @@ class Student
 
   def self.all_students_in_grade_X(value)
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, value)
   end
 
   def save
